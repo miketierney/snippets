@@ -1,0 +1,1 @@
+ruby -I.:lib:test test/test_csscrubber.rb | unit_diff -u
