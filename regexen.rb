@@ -1,0 +1,2 @@
+# Works for non-edge case CSS files... it's ugly, but it'll get the bulk of the selectors.  It'll also grab font names and a few more things that you probbaly don't want either.  Use a SAC parser instead.
+/([\.|^\#|^|\s]([\.a-zA-Z0-9_-]+)\s?){1,}[\,|\{]/
