@@ -1,0 +1,19 @@
+git svn clone http://svn/project/trunk project_trunk --username=miket # results in refs/remotes/git-svn, which seems to be the norm, but I don't like.
+
+git svn init http://svn/project project_dir -s --username=miket
+
+git svn clone http://svn/project project_dir -s --username=miket
+
+
+
+-------
+
+
+
+git svn init http://svn/project project_dir -s --username=miket
+
+git svn fetch --all -r 1000
+
+git svn show-ignore >> .git/info/exclude
+
+git svn init http://svn/project project_dir -s --username=miket
