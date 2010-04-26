@@ -1,0 +1,26 @@
+/*
+ * This float clearing solution was taken from Handcrafted CSS, written by Dan Cederholm
+ * ------------------------------------- */
+ 
+/* For good browsers
+ * ------------------------------------- */
+
+/* self-clearing floats */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* For IE
+ * ------------------------------------- */
+
+* html .group { /* IE6 */
+  height: 1%;
+}
+
+*:first-child+html .group { /* IE7 */
+  min-height: 1px;
+}
